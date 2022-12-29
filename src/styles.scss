@@ -452,6 +452,15 @@ input:checked+.slider:before {
   flex-direction: column;
 }
 
+.input-two__bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-margin-mobile {
+ height: 85px;
+}
+
 /* -------------------------------------------------------- */
 
 .main {
@@ -645,12 +654,41 @@ like a tickmark */
 // 375 768 
 
 @media only screen and (max-width: 768px) {
+
   .inputs-one__box-one,
-  .inputs-two__box-one {
+  .inputs-two__box-one,
+  .inputs-two__container-one,
+  .inputs-three__box,
+  .inputs-three__box-two,
+  .inputs-one__btn.submit-btn {
     width: 100%;
   }
+
+  .inputs-two__btn-box.margin-top-16px {
+    margin-top: 0;
+  }
+
+  .inputs-two__input-text.no-margin-mobile {
+    margin-bottom: 0;
+    height: 75px;
+    padding: 8px 12px;
+  }
+
   .inputs-three__box-one {
     width: 100%;
-    display:none;
+    display: none;
+  }
+
+  .inputs-two__box {
+    width: 100%;
+  }
+
+  .inputs-two__container-one {
+    flex-direction: column;
+
+  }
+
+  .inputs-two__placeholder {
+    margin-bottom: 8px;
   }
 }
